@@ -7,7 +7,7 @@
     android:background="@drawable/fondoconfirmar"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.example.ricardopazdemiquel.movilesConductor.Cofirmar_Carrera">
+    tools:context="com.example.ricardopazdemiquel.movilesConductor.com.ricardopazdemquel.movilesConductor.Cofirmar_Carrera">
 
     <TextView
         android:id="@+id/tv_tipo_siete"

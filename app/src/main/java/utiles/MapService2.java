@@ -26,13 +26,10 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
-import android.view.animation.Animation;
-import android.view.animation.RotateAnimation;
 
-import com.example.ricardopazdemiquel.movilesConductor.MainActivityConductor;
-import com.example.ricardopazdemiquel.movilesConductor.R;
+import com.ricardopazdemquel.movilesConductor.MainActivityConductor;
+import com.ricardopazdemiquel.movilesConductor.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

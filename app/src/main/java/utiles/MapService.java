@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -20,8 +19,8 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 
-import com.example.ricardopazdemiquel.movilesConductor.MainActivityConductor;
-import com.example.ricardopazdemiquel.movilesConductor.R;
+import com.ricardopazdemquel.movilesConductor.MainActivityConductor;
+import com.ricardopazdemiquel.movilesConductor.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

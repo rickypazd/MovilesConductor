@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ricardopazdemiquel.movilesConductor">
+    package="com.ricardopazdemiquel.movilesConductor">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -13,10 +13,6 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name="utiles.Contexto"
@@ -44,23 +40,23 @@
             android:name="utiles.GPS_service"
             android:exported="false" />
         <service android:name="utiles.ForegroundService" />
-        <service android:name=".Services.FirebaseService">
+        <service android:name="com.ricardopazdemquel.movilesConductor.Services.FirebaseService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".Services.FirebaseMessagin">
+        <service android:name="com.ricardopazdemquel.movilesConductor.Services.FirebaseMessagin">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".Cofirmar_Carrera"
+            android:name="com.ricardopazdemquel.movilesConductor.Cofirmar_Carrera"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Carga"
+            android:name="com.ricardopazdemquel.movilesConductor.Carga"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -70,83 +66,83 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginConductor"
+            android:name="com.ricardopazdemquel.movilesConductor.LoginConductor"
             android:label="@string/title_activity_login_conductor"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".MainActivityConductor"
+            android:name="com.ricardopazdemquel.movilesConductor.MainActivityConductor"
             android:label="Conductor"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Detalle_viaje_Cliente"
+            android:name="com.ricardopazdemquel.movilesConductor.Detalle_viaje_Cliente"
             android:label="Detalle del viaje"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".InicieTurno"
+            android:name="com.ricardopazdemquel.movilesConductor.InicieTurno"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".MapCarrera"
+            android:name="com.ricardopazdemquel.movilesConductor.MapCarrera"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".MapCarreraTogo"
+            android:name="com.ricardopazdemquel.movilesConductor.MapCarreraTogo"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".cobranza"
+            android:name="com.ricardopazdemquel.movilesConductor.cobranza"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Sin_conexion"
+            android:name="com.ricardopazdemquel.movilesConductor.Sin_conexion"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".CancelarConductor"
+            android:name="com.ricardopazdemquel.movilesConductor.CancelarConductor"
             android:label="Cancelar viaje"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ConfirmarCancelacion"
+            android:name="com.ricardopazdemquel.movilesConductor.ConfirmarCancelacion"
             android:label="Cancelar viaje"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Perfil_Conductor"
+            android:name="com.ricardopazdemquel.movilesConductor.Perfil_Conductor"
             android:screenOrientation="portrait"
             android:label="Mi Perfil"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".PerfilCarrera"
+            android:name="com.ricardopazdemquel.movilesConductor.PerfilCarrera"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CanceloViaje"
+            android:name="com.ricardopazdemquel.movilesConductor.CanceloViaje"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".veiheabor"
+            android:name="com.ricardopazdemquel.movilesConductor.veiheabor"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Editar_perfil_Activity"
+            android:name="com.ricardopazdemquel.movilesConductor.Editar_perfil_Activity"
             android:screenOrientation="portrait"
             android:label="Editar"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".CostosExtras"
+            android:name="com.ricardopazdemquel.movilesConductor.CostosExtras"
             android:label="Costos extras" />
 
-        <activity android:name=".Chat_Activity"
+        <activity android:name="com.ricardopazdemquel.movilesConductor.Chat_Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".Preferencias"
+        <activity android:name="com.ricardopazdemquel.movilesConductor.Preferencias"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="Preferencias"
             android:screenOrientation="portrait"></activity>
 
 
-        <activity android:name=".Transaccion_cliente_Activity"
+        <activity android:name="com.ricardopazdemquel.movilesConductor.Transaccion_cliente_Activity"
             android:label="Créditos"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait"></activity>

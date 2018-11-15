@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ricardopazdemiquel.movilesConductor.cobranza"
+    tools:context="com.example.ricardopazdemiquel.movilesConductor.com.ricardopazdemquel.movilesConductor.cobranza"
     android:background="@drawable/fondocobranza">
 
 

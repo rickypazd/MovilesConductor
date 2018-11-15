@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondoincioturno"
     android:orientation="vertical"
-    tools:context="com.example.ricardopazdemiquel.movilesConductor.InicieTurno">
+    tools:context="com.example.ricardopazdemiquel.movilesConductor.com.ricardopazdemquel.movilesConductor.InicieTurno">
 
 <android.support.v7.widget.CardView
     android:id="@+id/iniciar_como_super_7"

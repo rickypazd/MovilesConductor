@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fafafa"
-    tools:context=".Perfil_Conductor">
+    tools:context="com.ricardopazdemquel.movilesConductor.Perfil_Conductor">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar3aa"
@@ -51,6 +51,7 @@
                             android:translationZ="1dp">
 
                             <ImageView
+                                android:id="@+id/btn_edit_fto"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:src="@drawable/edit_pencil" />
