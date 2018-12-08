@@ -307,7 +307,7 @@ public class MapCarrera extends AppCompatActivity implements LocationListener, S
             };
         }
         registerReceiver(bradcastCanceloCarrera, new IntentFilter("Carrera_Cancelada"));
-
+        mSensorManager = (SensorManager) this.getSystemService(SENSOR_SERVICE);
         mSensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_UI);
         mSensorManager.registerListener(this, magnetometer, SensorManager.SENSOR_DELAY_UI);
 

@@ -63,12 +63,14 @@ public class Adapter_transaccion extends BaseAdapter {
             final JSONObject trans = array.getJSONObject(i);
             int id = trans.getInt("id");
             String fecha = trans.getString("fecha");
+
             String tipo_nombre = trans.getString("tipo_nombre");
-            String cantidad = trans.getString("cantidad");
+            double cant = Double.parseDouble(trans.getString("cantidad"));
+            String cantidad = String.format("%.2f", cant); ;
             String id_usuario = trans.getString("id_usuario");
             String id_carrera = trans.getString("id_carrera");
 
-            text_fecha.setText(fecha);
+            text_fecha.setText(fecha.substring(0,16));
             text_cantidad.setText(cantidad);
             text_tipo.setText(tipo_nombre);
 

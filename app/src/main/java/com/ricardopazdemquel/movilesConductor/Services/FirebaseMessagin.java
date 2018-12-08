@@ -61,7 +61,7 @@ public class FirebaseMessagin extends FirebaseMessagingService
             Notification notification= new NotificationCompat.Builder(this, Contexto.CHANNEL_ID)
                     .setContentTitle("Siete: Nuevo mensaje")
                     .setContentText(obj.getString("mensaje"))
-                    .setSmallIcon(R.drawable.ic_logosiete_background)
+                    .setSmallIcon(R.drawable.ic_logosiete_foreground)
                     .setContentIntent(pendingIntent)
                     .build();
             NotificationManager notificationManager=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

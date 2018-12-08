@@ -80,7 +80,7 @@ public class Carga extends AppCompatActivity {
             Intent intent = new Intent(Carga.this, LoginConductor.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
-            finish();
+          //  finish();
         }
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -147,8 +147,9 @@ public class Carga extends AppCompatActivity {
 
     public void continuar(){
         Intent intent = new Intent(Carga.this, MainActivityConductor.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-        finish();
+
     }
     private void alert(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Carga.this);

@@ -6,14 +6,15 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="apikey">AIzaSyAxdWoqiMpucK4ZOf5M8JzQii8m1x9WrR4</string>
-  <string name="url_servlet_admin">http://204.93.196.61:8080/sietePrueva/admin/adminController</string>
-  <string name="url_servlet_index">http://204.93.196.61:8080/sietePrueva/indexController</string>
-  <string name="url_foto">http://204.93.196.61:8080/sietePrueva/</string>
-  <string name="url_servlet_admin_web">http://192.168.1.104:8080/SieteWebCliente/admin/adminController</string>
+    <string name="url_servlet_admin">http://204.93.196.61:8080/siete/admin/adminController</string>
+    <string name="url_servlet_index">http://204.93.196.61:8080/siete/indexController</string>
+  <!--<string name="url_servlet_admin">http://192.168.1.100:8080/siete/admin/adminController</string>-->
+  <!--<string name="url_servlet_index">http://192.168.1.100:8080/siete/indexController</string>-->
+    <string name="url_foto">http://204.93.196.61:8080/siete/</string>
+    <string name="url_servlet_admin_web">http://204.93.196.61:8080/SieteWebCliente/admin/adminController</string>
     <string name="style_map">[
   {
     "elementType": "geometry",
