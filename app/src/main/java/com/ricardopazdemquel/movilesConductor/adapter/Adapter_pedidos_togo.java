@@ -66,10 +66,13 @@ public class Adapter_pedidos_togo extends BaseAdapter {
 
         TextView text_producto = view.findViewById(R.id.text_producto);
         TextView text_cantidad = view.findViewById(R.id.text_cantidad);
+        TextView text_descripcion = view.findViewById(R.id.txt_descripcion);
+
         try {
             JSONObject obj =  array.getJSONObject(i);
             text_producto.setText(obj.getString("producto"));
             text_cantidad.setText(obj.getString("cantidad"));
+            text_descripcion.setText(obj.getString("descripcion"));
             view.setTag(obj.toString());
         } catch (JSONException e) {
             e.printStackTrace();
